@@ -1,0 +1,212 @@
+2020-11-17 19:34:44.602 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 9456 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 19:34:44.608 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 19:34:45.754 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-17 19:34:45.787 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 MongoDB repository interfaces.
+2020-11-17 19:34:45.968 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 19:34:47.086 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 19:34:47.103 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 19:34:47.104 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 19:34:47.104 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 19:34:47.253 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 19:34:47.254 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2555 ms
+2020-11-17 19:34:48.152 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 19:34:48.304 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 19:34:48.305 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 19:34:48.306 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 19:34:48.306 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 19:34:49.171 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-17 19:34:49.589 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 19:34:49.629 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 19:34:49.635 [main] INFO  com.imooc.user.Application - Started Application in 6.007 seconds (JVM running for 9.803)
+2020-11-17 19:34:51.250 [cluster-ClusterId{value='5fb3b55953debb49bdcca59c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-17 19:36:00.206 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 19:36:12.959 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 2884 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 19:36:12.967 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 19:36:14.198 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-17 19:36:14.233 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 MongoDB repository interfaces.
+2020-11-17 19:36:14.379 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 19:36:15.058 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 19:36:15.072 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 19:36:15.073 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 19:36:15.074 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 19:36:15.200 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 19:36:15.200 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2061 ms
+2020-11-17 19:36:16.146 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 19:36:16.294 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 19:36:16.295 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 19:36:16.296 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 19:36:16.296 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 19:36:17.137 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-17 19:36:17.550 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 19:36:17.584 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 19:36:17.588 [main] INFO  com.imooc.user.Application - Started Application in 5.926 seconds (JVM running for 8.205)
+2020-11-17 19:36:19.217 [cluster-ClusterId{value='5fb3b5b19e1d3c1c18d4e28f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-17 19:37:30.511 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 19:37:42.429 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 4828 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 19:37:42.436 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 19:37:43.606 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 19:37:44.531 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 19:37:44.546 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 19:37:44.547 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 19:37:44.547 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 19:37:44.681 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 19:37:44.682 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2118 ms
+2020-11-17 19:37:45.641 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 19:37:45.970 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 19:37:45.972 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 19:37:45.972 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 19:37:45.973 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 19:37:46.140 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 19:37:46.181 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 19:37:46.188 [main] INFO  com.imooc.user.Application - Started Application in 5.039 seconds (JVM running for 7.32)
+2020-11-17 19:37:56.077 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:15:14.318 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 19280 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 20:15:14.324 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 20:15:15.455 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 20:15:16.024 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 20:15:16.038 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:15:16.039 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 20:15:16.039 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 20:15:16.177 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 20:15:16.178 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1752 ms
+2020-11-17 20:15:16.835 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:15:17.048 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 20:15:17.049 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 20:15:17.049 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 20:15:17.050 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 20:15:17.199 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:15:17.229 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 20:15:17.233 [main] INFO  com.imooc.user.Application - Started Application in 4.145 seconds (JVM running for 6.207)
+2020-11-17 20:17:36.703 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:17:44.382 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 14012 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 20:17:44.406 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 20:17:46.520 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 20:17:47.495 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 20:17:47.515 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:17:47.516 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 20:17:47.517 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 20:17:47.714 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 20:17:47.714 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3119 ms
+2020-11-17 20:17:48.580 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:17:48.880 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 20:17:48.881 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 20:17:48.883 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 20:17:48.883 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 20:17:49.089 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:17:49.139 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 20:17:49.146 [main] INFO  com.imooc.user.Application - Started Application in 6.078 seconds (JVM running for 8.202)
+2020-11-17 20:18:19.634 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 20:18:19.635 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-17 20:18:19.642 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-11-17 20:19:22.636 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:19:30.297 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 11492 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 20:19:30.308 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 20:19:31.620 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 20:19:32.266 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 20:19:32.280 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:19:32.281 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 20:19:32.281 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 20:19:32.434 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 20:19:32.435 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1961 ms
+2020-11-17 20:19:33.412 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:19:33.773 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 20:19:33.774 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 20:19:33.775 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 20:19:33.776 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 20:19:33.984 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:19:34.056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 20:19:34.067 [main] INFO  com.imooc.user.Application - Started Application in 5.195 seconds (JVM running for 7.53)
+2020-11-17 20:20:59.963 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:21:06.706 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 15936 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 20:21:06.713 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 20:21:07.808 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 20:21:08.413 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 20:21:08.431 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:21:08.432 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 20:21:08.433 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 20:21:08.587 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 20:21:08.587 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1743 ms
+2020-11-17 20:21:09.288 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:21:09.521 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 20:21:09.523 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 20:21:09.524 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 20:21:09.525 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 20:21:09.712 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:21:09.753 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 20:21:09.758 [main] INFO  com.imooc.user.Application - Started Application in 4.315 seconds (JVM running for 6.447)
+2020-11-17 20:21:21.051 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:22:46.329 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 18264 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 20:22:46.336 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 20:22:47.394 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 20:22:47.955 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 20:22:47.969 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:22:47.970 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 20:22:47.970 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 20:22:48.104 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 20:22:48.105 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1625 ms
+2020-11-17 20:22:48.882 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:22:49.132 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 20:22:49.133 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 20:22:49.134 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 20:22:49.135 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 20:22:49.291 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:22:49.326 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 20:22:49.331 [main] INFO  com.imooc.user.Application - Started Application in 4.498 seconds (JVM running for 6.631)
+2020-11-17 20:23:01.421 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:23:09.531 [main] INFO  com.imooc.user.Application - Starting Application on DESKTOP-2I9A483 with PID 12780 (C:\Code\do\2020\202011\imooc-news-dev\imooc-news-dev-service-user\target\classes started by 10279 in C:\Code\do\2020\202011\imooc-news-dev)
+2020-11-17 20:23:09.539 [main] INFO  com.imooc.user.Application - The following profiles are active: dev
+2020-11-17 20:23:11.279 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.imooc.user]' package. Please check your configuration.
+2020-11-17 20:23:12.053 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 20:23:12.074 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:23:12.074 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 20:23:12.075 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-11-17 20:23:12.272 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 20:23:12.273 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2601 ms
+2020-11-17 20:23:13.390 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 20:23:13.869 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 20:23:13.871 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 20:23:13.872 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 20:23:13.873 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 20:23:14.263 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 20:23:14.316 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 20:23:14.329 [main] INFO  com.imooc.user.Application - Started Application in 6.62 seconds (JVM running for 8.834)
+2020-11-17 20:23:48.619 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 20:23:48.619 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-17 20:23:48.628 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-11-17 20:26:18.789 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
