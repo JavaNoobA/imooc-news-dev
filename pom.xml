@@ -12,6 +12,7 @@
         <module>imooc-news-dev-model</module>
         <module>imooc-news-dev-service-api</module>
         <module>imooc-news-dev-service-user</module>
+        <module>imooc-news-dev-service-files</module>
     </modules>
 
     <!--
@@ -171,11 +172,11 @@
             </dependency>
 
 <!--            &lt;!&ndash; 文件上传fdfs工具 &ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>com.github.tobato</groupId>-->
-<!--                <artifactId>fastdfs-client</artifactId>-->
-<!--                <version>${fastdfs.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.github.tobato</groupId>
+                <artifactId>fastdfs-client</artifactId>
+                <version>${fastdfs.version}</version>
+            </dependency>
 
             <!-- joda-time 时间工具 -->
             <dependency>

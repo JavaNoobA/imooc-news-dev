@@ -11,6 +11,8 @@ import com.imooc.pojo.AppUser;
 import com.imooc.pojo.bo.RegisterLoginBO;
 import com.imooc.user.service.UserService;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +29,9 @@ import java.util.UUID;
  */
 @RestController
 public class PassportController extends BaseController implements PassportControllerApi {
+
+    private static final Logger logger = LoggerFactory.getLogger(PassportController.class);
+
     @Autowired
     private SMSUtils smsUtils;
     @Autowired
@@ -53,6 +58,7 @@ public class PassportController extends BaseController implements PassportContro
         }
 
         String smsCode = redis.get(MOBILE_SMS_CODE + ":" + bo.getMobile());
+        logger.info("验证码: {}", smsCode);
         if (StringUtils.isBlank(smsCode) || !bo.getSmsCode().equalsIgnoreCase(smsCode)) {
             return GraceJSONResult.errorCustom(ResponseStatusEnum.SMS_CODE_ERROR);
         }
